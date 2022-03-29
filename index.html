@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Project</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="scroll.css">
+    
+</head>
+
+<body>
+  <main>
+    <!--header-->
+    <header id = "home">
+
+    <!--navbar-->
+        <nav id="nav">
+            <div class="nav-center">
+
+    <!--nav header-->        
+                <div class="nav-header">
+                    <img src="./logo.jpg" alt="logo" class="logo"/>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+    <!--links-->
+                <div class="links-container">   <!--para por default ocultar los links-->
+                    <ul class="links"> <!-- este para saber la height -->
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+
+                        <li>
+                            <a href="#dali-albers" class="scroll-link">Dali & Albers</a>
+                        </li>
+
+                        <li>
+                            <a href="#leonardo-klimt" class="scroll-link">Leonardo & Klimt</a>
+                        </li>
+
+                        <li>
+                            <a href="#monet-modigliani" class="scroll-link">monet & modigliani</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    <!-- banner -->
+        <div class="banner">
+            <div class="container">
+                <h1>pintores fabulosos</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- about -->
+    <section id="dali-albers" class="section">                
+            <div>
+              <div class="title">
+                <h2>Dali & Albers</h2>
+                <div class="underline"></div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="panel active" style="background-image: url(./img/albers1.jpg)">
+                <h3>Albers</h3>
+              </div>
+              <div class="panel" style="background-image: url(./img/albers2.jpg)">
+                <h3>Albers</h3>
+              </div>
+              <div class="panel" style="background-image: url(./img/dali1.jpg)">
+                <h3>Dali</h3>
+              </div>
+              <div class="panel" style="background-image: url(./img/dali2.jpg)">
+                <h3>Dali</h3>
+              </div>
+              <!--div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+                <h3>Mountains - Clouds</h3>
+              </div-->       
+            </div>
+               
+    </section>
+
+    <!-- about -->
+    <section id="leonardo-klimt" class="section">                
+        <div>
+          <div class="title">
+            <h2>Leonardo & Klimt</h2>
+            <div class="underline"></div>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="panel active" style="background-image: url(./img/klimt1.jpg)">
+            <h3>Klimt</h3>
+          </div>
+          <div class="panel" style="background-image: url(./img/klimt2.jpg)">
+            <h3>Klimt</h3>
+          </div>
+          <div class="panel" style="background-image: url(./img/leonardo1.jpg)">
+            <h3>Leonardo</h3>
+          </div>
+          <div class="panel" style="background-image: url(./img/leonardo2.jpg)">
+            <h3>Leonardo</h3>
+          </div>
+          <!--div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+            <h3>Mountains - Clouds</h3>
+          </div-->       
+        </div>
+           
+</section>
+
+    <!-- about -->
+    <section id="monet-modigliani" class="section">                
+        <div>
+          <div class="title">
+            <h2>Monet & Modigliani</h2>
+            <div class="underline"></div>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="panel active" style="background-image: url(./img/modigliani1.jpg)">
+            <h3>Modigliani</h3>
+          </div>
+          <div class="panel" style="background-image: url(./img/modigliani2.jpg)">
+            <h3>Modigliani</h3>
+          </div>
+          <div class="panel" style="background-image: url(./img/monet1.jpg)">
+            <h3>Monet</h3>
+          </div>
+          <div class="panel" style="background-image: url(./img/monet2.jpg)">
+            <h3>Monet</h3>
+          </div>
+          <!--div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+            <h3>Mountains - Clouds</h3>
+          </div-->       
+        </div>
+           
+</section>
+
+
+
+    <!--footer-->
+    <footer class="section">
+        <p>
+            copyright &copy; my company <span id="date"></span>. All rights reserved           
+        </p>
+    </footer>
+
+    <!-- back to the top button -->
+    <a href="#home" class="scroll-link top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+  </main>
+    <!--javascript-->
+    <script src="scroll.js"></script>
+</body>
+</html>
